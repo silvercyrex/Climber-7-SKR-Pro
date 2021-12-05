@@ -351,7 +351,7 @@
 // The offset has to be X=0, Y=0 for the extruder 0 hotend (default extruder).
 // For the other hotends it is their distance from the extruder 0 hotend.
 #define HOTEND_OFFSET_X { 0.0, 264.53 } // (mm) relative X-offset for each nozzle
-#define HOTEND_OFFSET_Y { 0.0, 1.00 }  // (mm) relative Y-offset for each nozzle
+#define HOTEND_OFFSET_Y { 0.0, -1.00 }  // (mm) relative Y-offset for each nozzle
 #define HOTEND_OFFSET_Z { 0.0, -0.27 }  // (mm) relative Z-offset for each nozzle
 
 // @section machine
@@ -1179,7 +1179,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -33, -13, -2.4 }
+#define NOZZLE_TO_PROBE_OFFSET { -33, 13, -2.4 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1340,8 +1340,8 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR true
-#define INVERT_E1_DIR true
+#define INVERT_E0_DIR false
+#define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
 #define INVERT_E4_DIR false
